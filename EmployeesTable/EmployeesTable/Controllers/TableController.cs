@@ -9,9 +9,9 @@ namespace EmployeesTable.Controllers
 {
     public class TableController : Controller
     {
-        public EmployeeRep _context { get; private set; }
+        public IRepository<Employee> _context { get; private set; }
         private readonly string[] positions = new string[4] { "Стажер", "Джуниор", "Мидл", "Сеньор" };
-        public TableController(EmployeeRep context)
+        public TableController(IRepository<Employee> context)
         {
             _context = context;
         }

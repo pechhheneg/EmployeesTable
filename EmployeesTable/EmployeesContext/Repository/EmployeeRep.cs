@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace EmployeesContext
 {
-    public class EmployeeRep
+    public class EmployeeRep: IRepository<Employee>
     {
         private readonly EmployeeDbContext _context;
 

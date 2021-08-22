@@ -19,14 +19,12 @@ namespace EmployeesTable
             services.AddControllersWithViews();
             string connectionString = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<EmployeeDbContext>(builder => builder.UseSqlServer(connectionString, c => c.MigrationsAssembly("EmployeesTable")));
-            services.AddScoped<EmployeeRep>();
+            services.AddScoped<IRepository<Employee>,EmployeeRep>();
         }
 
       
         public void Configure(IApplicationBuilder app)
         {
-
-
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
