@@ -158,3 +158,6 @@ C:\Users\Lenovo\Documents\GitHub\EmployeesTable\EmployeesTable\EmployeesTable\ob
 C:\Users\Lenovo\Documents\GitHub\EmployeesTable\EmployeesTable\EmployeesTable\obj\Debug\net5.0\ref\EmployeesTable.dll
 C:\Users\Lenovo\Documents\GitHub\EmployeesTable\EmployeesTable\EmployeesTable\obj\Debug\net5.0\EmployeesTable.pdb
 C:\Users\Lenovo\Documents\GitHub\EmployeesTable\EmployeesTable\EmployeesTable\obj\Debug\net5.0\EmployeesTable.genruntimeconfig.cache
+C:\Users\Lenovo\Documents\GitHub\EmployeesTable\EmployeesTable\EmployeesTable\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Lenovo\Documents\GitHub\EmployeesTable\EmployeesTable\EmployeesTable\obj\Debug\net5.0\Razor\Views\Table\GetInfo.cshtml.g.cs
+C:\Users\Lenovo\Documents\GitHub\EmployeesTable\EmployeesTable\EmployeesTable\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs

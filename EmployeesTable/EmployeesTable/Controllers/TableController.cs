@@ -23,7 +23,7 @@ namespace EmployeesTable.Controllers
         [HttpGet]
         public IActionResult Add()
         {
-            
+
             SelectList selectList = new SelectList(positions);
             ViewBag.SelectItems = selectList;
             return View();
@@ -43,20 +43,20 @@ namespace EmployeesTable.Controllers
                 {
                     ModelState.AddModelError(nameof(employee.Name), "Формат ФИО: Васильев Василий Васильевич");
                 }
-            }          
-             if (DateTime.Now < employee.HB || employee.HB==DateTime.MinValue)
+            }
+            if (DateTime.Now < employee.HB || employee.HB == DateTime.MinValue)
             {
                 ModelState.AddModelError(nameof(employee.HB), "Некорректная дата");
             }
-             if (employee.Position != positions[0] && employee.Position != positions[1] && employee.Position != positions[2] && employee.Position != positions[3])
+            if (employee.Position != positions[0] && employee.Position != positions[1] && employee.Position != positions[2] && employee.Position != positions[3])
             {
                 ModelState.AddModelError(nameof(employee.Position), "Некорректная должность");
             }
-             if (employee.Seniority > 50 || employee.Seniority < 0)
+            if (employee.Seniority > 50 || employee.Seniority < 0)
             {
                 ModelState.AddModelError(nameof(employee.Seniority), "Некорректный стаж");
             }
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 try
                 {
@@ -72,8 +72,13 @@ namespace EmployeesTable.Controllers
             {
                 SelectList selectList = new SelectList(positions);
                 ViewBag.SelectItems = selectList;
-                return View(employee); 
+                return View(employee);
             }
+        }
+        [HttpGet]
+        public IActionResult GetInfo()
+        {
+            return View();
         }
     }
 }

@@ -1,0 +1,26 @@
+﻿ @addTagHelper  *,Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE Html> 
+    
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <title>@ViewBag.Title</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <header>
+            <div class="collapse navbar-collapse">
+            <a class="navbar-brand" asp-controller="Table" asp-action="Show">Домой</a>
+            <a class="nav-link" asp-controller="Table" asp-action="Add">Добавление сотрудника</a>
+            <a class="nav-link" asp-controller="Table" asp-action="GetInfo">О задании</a>
+            </div>
+        </header>
+        </nav>  
+        <div>
+            @RenderBody()
+        </div>
+        <footer>
+            <h4>Выполнил - Куракин Максим Игоревич</h4>
+        </footer>
+</body>

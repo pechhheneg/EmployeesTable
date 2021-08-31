@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeesTable", "EmployeesTable\EmployeesTable.csproj", "{64AD17E7-7F43-4550-A442-058EDB9523EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeesTable", "EmployeesTable\EmployeesTable.csproj", "{64AD17E7-7F43-4550-A442-058EDB9523EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeesContext", "EmployeesContext\EmployeesContext.csproj", "{6816AAA9-1DAB-4551-A016-63EC1E6032BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeesContext", "EmployeesContext\EmployeesContext.csproj", "{6816AAA9-1DAB-4551-A016-63EC1E6032BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
